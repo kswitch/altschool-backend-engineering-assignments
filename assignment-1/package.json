@@ -2,7 +2,7 @@
   "name": "assignment-1",
   "version": "1.0.0",
   "description": "AltSchool BackEnd Engineering (Node JS) First Assignment",
-  "main": "questionOne.js",
+  "main": "question1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
