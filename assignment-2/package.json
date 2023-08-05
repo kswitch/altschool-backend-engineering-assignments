@@ -1,0 +1,16 @@
+{
+  "name": "assignment-2",
+  "version": "1.0.0",
+  "description": "AltSchool BackEnd Engineering (Node JS) Second Assignment",
+  "main": "question1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Altschool",
+    "Backend",
+    "Engineering"
+  ],
+  "author": "Kingsley Osuagwu-Chidiadi",
+  "license": "ISC"
+}
