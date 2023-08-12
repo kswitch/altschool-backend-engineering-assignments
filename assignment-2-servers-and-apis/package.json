@@ -1,0 +1,20 @@
+{
+  "name": "assignment-2",
+  "version": "1.0.0",
+  "description": "AltSchool Assignment on Servers and API's",
+  "main": "question1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "keywords": [
+    "AltSchool",
+    "Backend",
+    "engineering"
+  ],
+  "author": "Kingsley Osuagwu-Chidiadi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
