@@ -31,19 +31,26 @@ const server = http.createServer((req, res) => {
         const {query: {id} } = parsedURL
 
         try {
-            const items = JSON.parse(allItems)
-            const foundItem = items.find(item => id === item.id)
-
-            if (foundItem) {
-                return res.writeHead(200, {
-                    'Content-type': 'application/json'
-                }).end(JSON.stringify(foundItem))
+            if (id) {
+                const items = JSON.parse(allItems)
+                const foundItem = items.find(item => id === item.id)
+    
+                if (foundItem) {
+                    return res.writeHead(200, {
+                        'Content-type': 'application/json'
+                    }).end(JSON.stringify(foundItem))
+                }
+                else {
+                    return res.writeHead(404, {
+                        'Content-type': 'text/html'
+                    }).end(`<p>Item not found</p>`)
+                }
             }
             else {
-                return res.writeHead(404, {
+                return res.writeHead(404, { 
                     'Content-type': 'text/html'
-                }).end(`<p>Item not found</p>`)
-            } 
+                }).end(`<h1>Page Not Found</h1>`)
+            }
         } 
         catch (error) {
             console.warn(error)
