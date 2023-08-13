@@ -24,6 +24,8 @@ const server = http.createServer((req, res) => {
     const parsedURL = nodeURL.parse(url, true)
     const {path, pathname, search} = nodeURL.parse(url, true)
 
+    console.log(parsedURL);
+
    //========== GET Requests ========//
     if (method === 'GET') {
         // Index Page Served
