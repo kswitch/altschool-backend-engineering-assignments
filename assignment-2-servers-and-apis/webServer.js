@@ -6,6 +6,7 @@ const body = fs.readFileSync(`${__dirname}/static/index.html`, 'utf-8')
 const notFound = fs.readFileSync(`${__dirname}/static/404.html`, 'utf-8')
 
 const server = http.createServer((req, res) => {
+    //jbefjkebf
     const {url} = req
 
     if (url == '/' || url == 'index.html') {
